@@ -1,0 +1,22 @@
+.card {
+    cursor: pointer;
+    img {
+        width: 285px;
+        height: 348px;
+    }
+    .card-body {
+        .card-title {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #4c5462;
+        }
+        .stock {
+            font-size: 15px;
+        }
+    }
+}

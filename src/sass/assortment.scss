@@ -1,0 +1,13 @@
+.assortment {
+    width: 100%;
+    height: auto;
+    @include center();
+    margin-top: 50px;
+    .assortment_container {
+        width: 80%;
+        height: auto;
+        @include center();
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+}

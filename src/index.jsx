@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './css/style.min.css';
+// import Header from './components/Header';
+import Assortment from './components/Assortment';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+
+
+
+
+
+
+class App extends Component {
+  render(){
+    return (
+      <Fragment>
+        <Assortment/>
+      </Fragment>
+    )
+  }
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

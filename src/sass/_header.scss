@@ -1,0 +1,63 @@
+.header {
+    width: 100%;
+    height: auto;
+    @include center();
+    .container {
+        width: 80%;
+        height: auto;
+        @include between();
+        .best {
+            position: relative;
+            width: 255px;
+            height: 60px;
+            .orange_box {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background: #f89b72;
+            }
+            .best_text {
+                position: absolute;
+                top: 25px;
+                left: 48px;
+                h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #4c5462;
+                }
+            }
+        }
+        .menu {
+            width: auto;
+            height: auto;
+            @include center();
+            .menu_list {
+                width: auto;
+                height: auto;
+                @include center();
+                gap: 30px;
+                .menu_item {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #4c5462;
+                    cursor: pointer;
+                    &:hover {
+                        color: #f89b72;
+                    }
+                }
+            }
+            .menu_list :nth-child(1){
+                color: #f89b72;
+            }
+            .dash {
+                position: absolute;
+                top: 50px;
+                right: 154px;
+                width: 950px;
+                height: 1px;
+                background:rgb(238, 238, 238);
+            }
+        }
+    }
+}
